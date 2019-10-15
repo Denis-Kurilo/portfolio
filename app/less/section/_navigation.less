@@ -1,7 +1,6 @@
 .nav {
    position: relative;
    height: 200px;
-   // background-image: linear-gradient(#8140c4, #26bca9);
    background-color: #232323;
    h1 {
       color: white;
@@ -15,14 +14,13 @@
 }
 
 .logo{
-  margin: 50px 0 0 30px;
+  margin: 35px 0 0 50px;
 }
 
+//navigation
 .navigation{
- // width: 100%;
   display: flex;
   margin-left: auto;
-  //margin-right: auto;
  
 }
 .list{
@@ -30,26 +28,65 @@
   padding: 0;
   display: flex;
   list-style-type: none;
+  margin-right: 50px;
 }
 
 .list li{
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-left: 35px;
+  margin-left: 50px;
   display: flex;
-  //align-items: center;
-  //margin-top: -55px;
-  margin-top: 35px;
-  //margin-right: 50px;
+  margin-top: 30px;
   
   &:first-child{
     margin-left: 0;
   }
-  
 }
 
-.list li a{
+.list li a, .list li{
   color: #FFF;
   font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+//выподающий список
+.list ul{
+  width: 255px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #232323;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  z-index: 1;
+  padding: 20px 0 15px 15px;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: all 0.3s ease-in;
+  border-radius: 0 0 5px 5px; 
+} 
+
+.list li> ul li{
+  margin: 0;
+  padding: 0;
+}
+
+.list li:hover > ul, .list li:hover > ul{
+  transform: scaleY(1);
+}
+
+.fa-angle-down path{
+  fill: #fff;
+}
+
+.svg-inline--fa.fa-w-10 {
+  width: 19px;
+  height: 24px;
+  position: relative;
+  top: 7px;
+  left: 3px;
 }
