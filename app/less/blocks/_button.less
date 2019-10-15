@@ -1,0 +1,49 @@
+.wrap-btn{
+	position: relative;
+	top: 50px;
+}
+
+.button{
+	display: inline-block;
+	padding: 7px 15px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	.transition (.3s);
+	position: relative;
+	overflow: hidden;
+	
+	&:hover, &:focus{
+		color: #000;
+		text-decoration: none;
+		box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+	}
+}
+
+.button::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -200px;
+	width: 60px;
+	height: 100%;
+	background-color: rgba(0,0,0,.4);
+	filter: blur(60px);
+	transform: skewX(-30deg);
+}
+
+.button:hover::before,
+.button:focus::before{
+	left: calc(100% + 150px);
+    transition: (1s);
+}
+
+.button--style{
+	font-size: 25px;
+	color: #000;
+	background-color: #FFF;
+	box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.7);
+	outline: none;
+	
+	
+}
