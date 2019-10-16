@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ru"> 
 <head>
 	<meta charset="UTF-8">
@@ -30,9 +30,15 @@
 <body>
 <!-- HEADER -->
 <header class="header" style="background-image: url(img/header/bg-header2.jpg)">
-	<!-- <div class="sale">
-		При заказе 2го сайта - СКИДКА!
-		<span>20%</span>
+	<!-- <div class="discount">
+		<div class="discount__bLeft">
+			<div>При заказе </div>
+			<div>2-го сайта</div> 
+			<div>СКИДКА!</div>
+		</div>
+		<div class="discount__bRight">
+			<div>20%</div>
+		</div> 
 	</div> -->
 	<div class="wrap-textHeader">
 		<h1 class="title">Портфолио Web - разработчика<br> 
@@ -57,7 +63,7 @@
 <!-- //HEADER -->
 
 <!-- NAV -->
-<div class="nav section" id="nav">
+<div class="nav wrapper" id="nav">
 	<!-- bg -->
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 		<polygon fill="#cdcdcd" points="0,100 100,0 100,100"/>
@@ -69,15 +75,8 @@
 
 		<div class="contacts">
 			<div class="social">
-				<svg class="icon vk">
-					<a href="https://vk.com/id8356952" target="_blank"><use xlink:href="sprite.svg#vk"></use></a>
-				</svg>
-
-				<svg class="icon instagram">
-					<a href="https://www.instagram.com/kurilo__denis/" target="_blank"><use xlink:href="sprite.svg#instagram"></use></a>
-				</svg>
 				<!-- gradient instagram  -->
-				<svg width="0" height="0" class="gradient-instagram">
+				<svg width="0" height="0">
 				  <radialGradient  id="rg" r="150%" cx="30%" cy="107%">
 				    <stop stop-color="#fdf497" offset="0" />
 				    <stop stop-color="#fdf497" offset="0.05" />
@@ -86,6 +85,14 @@
 				    <stop stop-color="#285AEB" offset="0.9" />
 				  </radialGradient>
 				</svg>
+				<svg class="icon vk">
+					<a href="https://vk.com/id8356952" target="_blank"><use xlink:href="sprite.svg#vk"></use></a>
+				</svg>
+
+				<svg class="icon instagram">
+					<a href="https://www.instagram.com/kurilo__denis/" target="_blank"><use xlink:href="sprite.svg#instagram"></use></a>
+				</svg>
+			
 				<!-- //gradient instagram  -->
 
 				<svg class="icon github">
@@ -131,15 +138,17 @@
 	<!-- bg -->
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 		<polygon fill="#fff" points="-100,0 0,100 100,100"/>
-		<!-- <polygon fill="white" points="0,100 100,0 100,100"/> -->
 	</svg>
 	<!-- //bg -->
-	<h2 class="titleSection section">Обо мне</h2>
+	<div class="wrapTitleSection">
+		<h2 class="titleSection section">Обо мне</h2>	
+	</div>
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="aboutFoto">
-					<!-- <img src="img/foto/foto.jpg" alt="Моя фотография"> -->
+					<div class="about-foto"><img class="foto" src="img/foto/foto.jpg" alt="Моя фотография" /></div>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -160,7 +169,68 @@
 </section>
 <!-- //ABOUT ME -->
 
+<section class="skils">
+	<div class="wrapTitleSection">
+		<h2 class="titleSection section">Умение и Навыки</h2>
+	</div>
 
+	<div class="card-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="cardImg">
+							<svg class="icons imposition">
+								<use xlink:href="sprite.svg#imposition"></use>
+							</svg>
+						</div>
+						<div class="cardTitle">Верстка</div>
+						<div class="cardText">
+							<div>HTML5 / CSS3</div>
+							<div>SASS/LESS</div>
+							<div>Pug</div>
+							<div>Cross browser</div>
+							<div>Media queries</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="card">
+						<div class="cardImg">
+							<svg class="icons programming">
+								<use xlink:href="sprite.svg#programming"></use>
+							</svg>
+						</div>
+						<div class="cardTitle">Programming</div>
+						<div class="cardText">
+							<div>JavaScript</div>
+							<div>Git</div>
+							<div>Gulp.js</div>
+							<div>PHP</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="card">
+						<div class="cardImg">
+							<svg class="icons frameworks">
+								<use xlink:href="sprite.svg#frameworks"></use>
+							</svg>
+						</div>
+						<div class="cardTitle">Frameworks</div>
+						<div class="cardText">
+							<div>Bootstrap 4</div>
+							<div>jQuery</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
