@@ -8,15 +8,16 @@
 	padding: 7px 15px;
 	border: 1px solid #000;
 	border-radius: 10px;
-	-webkit-border-radius: 10px;
 	.transition (.3s);
 	position: relative;
 	overflow: hidden;
 	
 	&:hover, &:focus{
-		color: #000;
+		color: @textBtnHover;
+		filter: brightness(0.9);
+		filter: sepia(20%);
 		text-decoration: none;
-		box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: @shadowBtnHover;
 	}
 }
 
@@ -40,9 +41,9 @@
 
 .button--style{
 	font-size: 25px;
-	color: #000;
-	background-color: #FFF;
-	box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.7);
+	color: @textBtn;
+	background-color: @bgBtn;
+	box-shadow: @shadowBtn;
 	outline: none;
 	
 	

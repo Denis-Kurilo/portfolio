@@ -56,69 +56,127 @@
 </header>
 <!-- //HEADER -->
 
-
-
-
 <!-- NAV -->
 <div class="nav section" id="nav">
+	<!-- bg -->
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-		<polygon fill="white" points="0,100 100,0 100,100"/>
+		<polygon fill="#cdcdcd" points="0,100 100,0 100,100"/>
 	</svg>
-	
+	<!-- //bg -->
 		<div class="logo">
-			<img src="img/logo/logo.png" alt="Логотип">
+			<a href="#"><img src="img/logo/logo.png" alt="Логотип"></a>
 		</div>
 
-		<div class="contaacts">
+		<div class="contacts">
 			<div class="social">
 				<svg class="icon vk">
-					<a href="https://vk.com/"><use xlink:href="sprite.svg#vk"></use></a>
+					<a href="https://vk.com/id8356952" target="_blank"><use xlink:href="sprite.svg#vk"></use></a>
 				</svg>
 
 				<svg class="icon instagram">
-					<use xlink:href="sprite.svg#instagram"></use>
+					<a href="https://www.instagram.com/kurilo__denis/" target="_blank"><use xlink:href="sprite.svg#instagram"></use></a>
 				</svg>
-				
+				<!-- gradient instagram  -->
+				<svg width="0" height="0" class="gradient-instagram">
+				  <radialGradient  id="rg" r="150%" cx="30%" cy="107%">
+				    <stop stop-color="#fdf497" offset="0" />
+				    <stop stop-color="#fdf497" offset="0.05" />
+				    <stop stop-color="#fd5949" offset="0.45" />
+				    <stop stop-color="#d6249f" offset="0.6" />
+				    <stop stop-color="#285AEB" offset="0.9" />
+				  </radialGradient>
+				</svg>
+				<!-- //gradient instagram  -->
+
 				<svg class="icon github">
-					<use xlink:href="sprite.svg#github"></use>
+					<a href="https://github.com/Denis-Kurilo" target="_blank"><use xlink:href="sprite.svg#github"></use></a>
 				</svg>
 				
 				<svg class="icon facebook">
-					<use xlink:href="sprite.svg#facebook"></use>
+					<a href="https://www.facebook.com/profile.php?id=100024366126772" target="_blank"><use xlink:href="sprite.svg#facebook"></use></a>
 				</svg>
-				<!-- <a class="vk" href="https://vk.com"></a>
-				<a class="vk2" href="ya.ru"></a>
-				<a class="vk3" href="https://vk.com"></a>
-				<a class="vk4" href="https://vk.com"></a> -->
 			</div>
-			<div class="phone"></div>
+			<div class="phone">
+				<svg class="mobile">
+					<a xlink:href="tel:89788059869"><use xlink:href="sprite.svg#mobile" width="30" height="30"></use>
+						<text class="text"  x="40" y="23" >8(978)805-98-69</text></a>
+				</svg>
+				
+			</div>
 		</div>
 
 		<nav class="navigation">
-			
-				<ul class="list">
-					<li><a href="#">Обо мне</a></li>
-					<li><a href="#">Опыт</a></li>
-					<li><a href="#">Портфолио</a></li>
-					<li>Услуги <i class="fas fa-angle-down"></i>
-						<ul>
-							<li><a href="#">Landin Page</a></li>
-							<li><a href="#">Сайт визитка</a></li>
-							<li><a href="#">Промо сайт</a></li>
-							<li><a href="#">Тематический сайт</a></li>
-							<li><a href="#">Персональный сайт</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Контакты</a></li>
-					<li><a href="#">Блог</a></li>
-				</ul>		
-			
-			
+			<ul class="list">
+				<li><a href="#">Обо мне</a></li>
+				<li><a href="#">Опыт</a></li>
+				<li><a href="#">Портфолио</a></li>
+				<li>Услуги <i class="fas fa-angle-down"></i>
+					<ul>
+						<li><a href="#">Landin Page</a></li>
+						<li><a href="#">Сайт визитка</a></li>
+						<li><a href="#">Промо сайт</a></li>
+						<li><a href="#">Тематический сайт</a></li>
+						<li><a href="#">Персональный сайт</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Блог</a></li>
+			</ul>		
 		</nav>	
-	
-	
 </div>
 <!-- //NAV -->
+
+<!-- ABOUT ME -->
+<section class="aboutMe">
+	<!-- bg -->
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+		<polygon fill="#fff" points="-100,0 0,100 100,100"/>
+		<!-- <polygon fill="white" points="0,100 100,0 100,100"/> -->
+	</svg>
+	<!-- //bg -->
+	<h2 class="titleSection section">Обо мне</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="aboutFoto">
+					<!-- <img src="img/foto/foto.jpg" alt="Моя фотография"> -->
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="aboutText">
+					<p>Приветствую Вас на моем сайте.<br> Я Курило Денис, занимаюсь web-разработкой сайтов. Сайты адаптивный и кросбраузерные. Серьезно подхожу к поставленным задачам и внимательно отношусь к качеству разрабатываемого продукта.</p>
+					
+						<div class="aboutDesk">
+							<span>В своих работах я применяю:</span>
+							<span>Front-end:</span> (HTML/Pug, CSS/LESS/SASS, BootStrap4, JS/JQuery/Ajax)
+							<span>Back-end:</span> (PHP / MySQL)
+							<span>Design</span>(PhotoShop, Adobe illustrator, CorelDRAW)
+						</div>
+					<div class="aboutAttention">Обращайтесь, буду рад вам помочь!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //ABOUT ME -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <br>

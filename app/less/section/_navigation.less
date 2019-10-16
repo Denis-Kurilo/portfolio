@@ -1,7 +1,7 @@
 .nav {
    position: relative;
    height: 200px;
-   background-color: #232323;
+   background-color: @bgNavPanel;
    h1 {
       color: white;
    }
@@ -19,6 +19,8 @@
 
 //navigation
 .navigation{
+  // width: 50%;
+  // height: auto;
   display: flex;
   margin-left: auto;
  
@@ -45,7 +47,7 @@
 }
 
 .list li a, .list li{
-  color: #FFF;
+  color: @colorNavigation;
   font-size: 20px;
   cursor: pointer;
   position: relative;
@@ -75,12 +77,16 @@
   padding: 0;
 }
 
+.list li> ul li:hover{
+ text-decoration: underline;
+}
+
 .list li:hover > ul, .list li:hover > ul{
   transform: scaleY(1);
 }
 
 .fa-angle-down path{
-  fill: #fff;
+  fill: @colorNavigation;
 }
 
 .svg-inline--fa.fa-w-10 {
