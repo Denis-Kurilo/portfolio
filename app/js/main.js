@@ -20,35 +20,24 @@ $(document).ready(function() {
 
 //Owl carousel  slider
 $('.portfolio').owlCarousel ({
-    loop: false,
-    margin: 10,
+loop: true,
     dots: false,
-  loop: true,
     margin: 10,
-    dots: false,
+    navText : ["<i class=\"fas fa-chevron-left\"></i>","<i class=\"fas fa-chevron-right\"></i>"],
     responsive: {
         0: {
             items: 1,
-            dotsEach: 5000,
-            //nav: true,
+            nav: false,
         },
 
-        992: {
-            items: 1,
-            nav: false,
-            //autoplay: 1000,
-            //autoplaySpeed: 5000,
-            //dotsEach: 5000,
-            //autoplayTimeout: 12000
+       480: {
+            items: 2,
+            nav: true,
         },
 
         1200: {
             items: 2,
             nav: true,
-            //autoplay: 1000,
-            //autoplaySpeed: 4000,
-            //dotsEach: 5000,
-            //autoplayTimeout: 8000
         },
     }
 });

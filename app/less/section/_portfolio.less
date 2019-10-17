@@ -1,55 +1,40 @@
 .wrapPortfolio{
 	width: 100%;
-	//height: 700px;
 	background-color: #232323;
-	//background-image: url(../img/bg/bg-portfolio.jpg);
+	background-image: url(../img/bg/bg-portfolio.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.80;
+    opacity: 0.90;
     padding-bottom: 40px;
-    //padding-bottom: 200px;
-    
+    margin-top: 30px;
 }
 
 .portfolio{
 	max-width: 1100px;
-	//height: 500px;
-	//padding-top: 100px;
-	//margin-bottom: 100px;
 	margin: 0 auto;
 }
 
-.sl{
-	
+.sl__slider-img{
 	position: relative;
-	border: 1px solid red;
+	
+	img{
+        border-radius: 5px;
+	}
 }
-/* .wrap-sl__slider-hover{
-	width: 100%;
-	height: 100%;
-	border: 1px solid black;
+ .sl__slider-img__hover{
 	position: absolute;
 	top: 0;
-	background: rgba(0,0,0,1);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.9);
+	opacity: 0;
+	transition: (0.6s);
+	border-radius: 5px;
+} 
 
-	
-} */
-
-.sl__slider-hover{
-	display: block;
-	width: 100%;
-	height: 100%;
-	font-size: 18px;
-	color: #FFF;
-	border: 1px solid green;
-	background: rgba(0,0,0,1);
-	position: absolute;
-	top: 0;
-	
-	
-	//padding: 30px 0 30px 0;
-}
+.sl__slider-img__hover:hover{opacity: 1;}
 
 .sl__title{
 	font-size: 20px;
@@ -58,77 +43,42 @@
 	border-bottom: 1px solid rgba(204,204,204,0.5);
 	padding-top: 10px;
 	padding-bottom: 5px;
+	color: #FFF;
 }
 
 .sl__slider-list{
 	margin: 0;
 	padding: 0;
 	padding: 15px 0 10px 70px;
-	
+	color: #FFF;
 }
 
 .sl__deskription{
+	font-size: 14px;
 	padding-left: 20px;
+	color: #FFF;
 }
 
 .sl__slider-button{
-	text-align: center;
+	display: inline-block;
 	margin-top: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .portfolio{
-	max-width: 1100px;
-	//height: 500px;
-	//padding-top: 100px;
-	//margin-bottom: 100px;
-	margin: 0 auto;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+    transform: translate(-50%, 0);
+	border-radius: 7px;
 	
-	
-	
-}
-
-.sl{
-	//margin-right: 20px;
-	//margin-bottom: 50px;
-}
-
-.sl__slider-img{
-	//height: 100%;
-	position: relative;
-	img{
-		max-width: 500px;
-		height: 287px;
-        border-radius: 5px;
+	a{
+		color: #FFF;
+		text-decoration: none;
+		padding: 4px 10px;
+		border: 1px solid #fff;
+		border-radius: 7px;
+		transition: (0.6s);
+		
+		&:hover, &:focus{
+			background-color: #FFF;
+			color: #000;
+		}
 	}
 }
-.wrap-sl__slider-hover{
-	width: 100%;
-	height: 200px;
-	border: 1px solid green;
-}
-.sl__slider-hover{
-	//width: 100%;
-	//height: 100%;
-	display: block;
-	position: absolute;
-	top: 0;
-	border: 1px solid red;
-	color: green;
-	
-	
-}
-
- */

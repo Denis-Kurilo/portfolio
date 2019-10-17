@@ -1,11 +1,13 @@
 .wrap-btn{
 	position: relative;
 	top: 50px;
+	text-align: center;
+	
 }
 
 .button{
 	display: inline-block;
-	padding: 7px 15px;
+	padding: 3px 15px;
 	border: 1px solid #000;
 	border-radius: 10px;
 	.transition (.3s);
@@ -45,6 +47,18 @@
 	background-color: @bgBtn;
 	box-shadow: @shadowBtn;
 	outline: none;
+}
+
+.button--styleP{
+	font-size: 25px;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	border: 1px solid #fff;
+	background-color: #000;
 	
-	
+	&:hover, &:focus{
+		background-color: #FFF;
+		color: #000;
+	}
 }
