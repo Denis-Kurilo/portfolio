@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang="ru"> 
+<html lang="ru">  
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,12 +20,15 @@
 	<!-- popup -->
 	<link rel="stylesheet" href="libs/popup/magnific-popup.css">
 
+	<!-- slick -->
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+
 	<!-- fons -->
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700,900&display=swap" rel="stylesheet">
 
 	<!-- FavIcons -->
 	<link rel="shortcut icon" href="img/favicons/favicon.png"  type="image/x-icon" />
-
 </head>
 <body>
 <!-- HEADER -->
@@ -169,6 +172,7 @@
 </section>
 <!-- //ABOUT ME -->
 
+<!-- SKILS -->
 <section class="skils">
 	<div class="wrapTitleSection">
 		<h2 class="titleSection section">Умение и Навыки</h2>
@@ -227,11 +231,123 @@
 					</div>
 				</div>
 
+				<div class="col-md-4">
+					<div class="card">
+						<div class="cardImg">
+							<svg class="icons design">
+								<use xlink:href="sprite.svg#design"></use>
+							</svg>
+						</div>
+						<div class="cardTitle">Дизайн</div>
+						<div class="cardText">
+							<div>Adobe Photoshop</div>
+							<div>Adobe illustrator</div>
+							<div>CorelDraw</div>
+							<div>Figma</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="card">
+						<div class="cardImg">
+							<svg class="icons cms">
+								<use xlink:href="sprite.svg#cms"></use>
+							</svg>
+						</div>
+						<div class="cardTitle">CMS</div>
+						<div class="cardText">
+							<div>Wordpress</div>
+							<div>MODX Revolution</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="card">
+						<div class="cardImg">
+							<svg class="icons analytics">
+								<use xlink:href="sprite.svg#analytics"></use>
+							</svg>
+						</div>
+						<div class="cardTitle">Веб-аналитика</div>
+						<div class="cardText">
+							<div>Яндекс.Метрика</div>
+							<div>Яндекс.Вебмастер</div>
+							<div>Google Analytics</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
+<!-- //SKILS -->
 
+<!-- PORTFOLIO -->
+<section class="wrapPortfolio">
+	<div class="wrapTitleSection">
+		<h2 class="titleSection titleSection--white section">Портфолио</h2>
+	</div>
+	<div class="owl-carousel portfolio">
+		<div class="sl">
+			<div class="sl__slider-img"><img src="img/portfolio/1.jpg" alt="Моё портфолио"></div>
+			<div class="wrap-sl__slider-hover">
+				<div class="sl__slider-hover">
+					<div class="sl__title">Какой-то сайт</div>
+					<ul class="sl__slider-list">
+						<li>Текст</li>
+						<li>Текст</li>
+						<li>Текст</li>
+						<li>Текст</li>
+					</ul>	
+					<div class="sl__deskription">Сверстан сайт, мобильная </div>		
+					<div class="sl__slider-button"><a href="#">Перейти на сайт</a></div>	
+				</div>	
+			</div>
+		</div>
+
+		<div class="sl">
+			<div class="sl__slider-img"><img src="img/portfolio/1.jpg" alt="Моё портфолио"></div>
+			<div class="wrap-sl__slider-hover">
+				<div class="sl__slider-hover">
+					<div class="sl__title">Какой-то сайт</div>
+					<ul class="sl__slider-list">
+						<li>Текст</li>
+						<li>Текст</li>
+						<li>Текст</li>
+						<li>Текст</li>
+					</ul>	
+					<div class="sl__deskription">Сверстан сайт, мобильная </div>	
+					<div class="sl__button">Сверстан сайт, mobile first, CMS Wordpress</div>	
+					<div class="sl__slider-button"><a href="#">Перейти на сайт</a></div>	
+				</div>	
+			</div>
+		</div>
+
+		<div class="sl">
+			<div class="sl__slider-img"><img src="img/portfolio/1.jpg" alt="Моё портфолио"></div>
+			<div class="wrap-sl__slider-hover">
+				<div class="sl__slider-hover">
+					<div class="sl__title">Какой-то сайт</div>
+					<ul class="sl__slider-list">
+						<li>Текст</li>
+						<li>Текст</li>
+						<li>Текст</li>
+						<li>Текст</li>
+					</ul>	
+					<div class="sl__deskription">Сверстан сайт, мобильная </div>	
+					<div class="sl__button">Сверстан сайт, mobile first, CMS Wordpress</div>	
+					<div class="sl__slider-button"><a href="#">Перейти на сайт</a></div>	
+				</div>	
+			</div>
+		</div>
+
+		
+
+	</div>
+</section>
+<!-- //PORTFOLIO -->
 
 
 
@@ -322,6 +438,7 @@
 <script src="libs/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 <script src="libs/typed.js/typed.js-master/lib/typed.min.js"></script>
 <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+<script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
