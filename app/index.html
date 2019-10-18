@@ -52,7 +52,7 @@
 		<a class="button button--style" href="#">Заказать услугу</a>
 	</div>
 
-	<a href="#nav" class="mouse_scroll">
+	<a href="#skils" class="mouse_scroll">
 		<div class="mouse">
 			<div class="wheel"></div>
 		</div>
@@ -66,14 +66,14 @@
 <!-- //HEADER -->
 
 <!-- NAV -->
-<div class="nav wrapper" id="nav">
+<div class="nav wrapper" id="navs">
 	<!-- bg -->
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 		<polygon fill="#cdcdcd" points="0,100 100,0 100,100"/>
 	</svg>
 	<!-- //bg -->
 		<div class="logo">
-			<a href="#"><img src="img/logo/logo.png" alt="Логотип"></a>
+			<a href="#header"><img src="img/logo/logo.png" alt="Логотип"></a>
 		</div>
 
 		<div class="contacts">
@@ -117,9 +117,9 @@
 
 		<nav class="navigation">
 			<ul class="list">
-				<li><a href="#">Обо мне</a></li>
-				<li><a href="#">Опыт</a></li>
-				<li><a href="#">Портфолио</a></li>
+				<li><a href="#aboutMe">Обо мне</a></li>
+				<li><a href="#skils">Опыт</a></li>
+				<li><a href="#portfolio">Портфолио</a></li>
 				<li>Услуги <i class="fas fa-angle-down"></i>
 					<ul>
 						<li><a href="#">Landin Page</a></li>
@@ -129,7 +129,7 @@
 						<li><a href="#">Персональный сайт</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="#contacts">Контакты</a></li>
 				<li><a href="#">Блог</a></li>
 			</ul>		
 		</nav>	
@@ -137,7 +137,7 @@
 <!-- //NAV -->
 
 <!-- ABOUT ME -->
-<section class="aboutMe">
+<section id="aboutMe" class="aboutMe">
 	<!-- bg -->
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 		<polygon fill="#fff" points="-100,0 0,100 100,100"/>
@@ -173,7 +173,7 @@
 <!-- //ABOUT ME -->
 
 <!-- SKILS -->
-<section class="skils">
+<section id="skils" class="skils">
 	<div class="wrapTitleSection">
 		<h2 class="titleSection section">Умение и Навыки</h2>
 	</div>
@@ -285,7 +285,7 @@
 <!-- //SKILS -->
 
 <!-- PORTFOLIO -->
-<section class="wrapPortfolio">
+<section id="portfolio" class="wrapPortfolio">
 	<div class="wrapTitleSection">
 		<h2 class="titleSection titleSection--white section">Портфолио</h2>
 	</div>
@@ -323,7 +323,7 @@
 				<div class="sl__deskription">Сверстан сайт, мобильная </div>	
 				<div class="sl__slider-button"><a href="#">Перейти на сайт</a></div>
 			</div>
-			<img src="img/portfolio/1.jpg" alt="Моё портфолио">
+			<img src="img/portfolio/2.jpg" alt="Моё портфолио">
 		</div>
 	</div>
 	<!-- //card -->
@@ -342,73 +342,121 @@
 				<div class="sl__deskription">Сверстан сайт, мобильная </div>	
 				<div class="sl__slider-button"><a href="#">Перейти на сайт</a></div>
 			</div>
-			<img src="img/portfolio/1.jpg" alt="Моё портфолио">
+			<img src="img/portfolio/3.jpg" alt="Моё портфолио">
 		</div>
 	</div>
 	<!-- //card -->
 
-
-</div>
-<div class="wrap-btn">
-	<a class="button button--styleP mb-40" href="#">Заказать</a>
-</div>
+	<!-- card -->
+	<div class="sl">
+		<div class="sl__slider-img">
+			<div class="sl__slider-img__hover">
+				<div class="sl__title">Какой-то сайт</div>
+				<ul class="sl__slider-list">
+					<li>Текст</li>
+					<li>Текст</li>
+					<li>Текст</li>
+					<li>Текст</li>
+				</ul>	
+				<div class="sl__deskription">Сверстан сайт, мобильная </div>	
+				<div class="sl__slider-button"><a href="#">Перейти на сайт</a></div>
+			</div>
+			<img src="img/portfolio/4.jpg" alt="Моё портфолио">
+		</div>
+	</div>
+	<!-- //card -->
+	</div>
+	<div class="wrap-btn">
+		<a class="button button--styleP mb-40" href="#">Заказать</a>
+	</div>
 </section>
 <!-- //PORTFOLIO -->
 
+<!-- CONTACTS -->
+<section id="contacts" class="formContacts">
+	<div class="wrapTitleSection">
+		<h2 class="titleSection section">Связаться со мной</h2>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="formContacts__text">
+					<p>Если Вы хотите задать вопрос, сообщить об ошибках  воспользуйтесь формой обратной связи.</p>
+				</div>
+				<div class="formContacts__info">
+					<span><i class="fas fa-at"></i> EMAIL:</span>
+					webprogram2017@mail.ru
+					<span><i class="fas fa-phone-volume"></i> ТЕЛЕФОН:</span>
+					8(978)805-98-69
+					<span><i class="fab fa-viber"></i> VIBER and WhatsApp</span>
+					8(978)805-98-69
+					<span><i class="fab fa-telegram-plane"></i> ТЕЛЕГРАМ</span>
+					https://t.me/Denis_KDB
+					<div class="formContacts__social">
+						<div class="social social--formContacts">
+							<!-- gradient instagram  -->
+							<svg width="0" height="0">
+							  <radialGradient  id="rg" r="150%" cx="30%" cy="107%">
+							    <stop stop-color="#fdf497" offset="0" />
+							    <stop stop-color="#fdf497" offset="0.05" />
+							    <stop stop-color="#fd5949" offset="0.45" />
+							    <stop stop-color="#d6249f" offset="0.6" />
+							    <stop stop-color="#285AEB" offset="0.9" />
+							  </radialGradient>
+							</svg>
+							<svg class="icon vk">
+								<a href="https://vk.com/id8356952" target="_blank"><use xlink:href="sprite.svg#vk"></use></a>
+							</svg>
 
+							<svg class="icon instagram">
+								<a href="https://www.instagram.com/kurilo__denis/" target="_blank"><use xlink:href="sprite.svg#instagram"></use></a>
+							</svg>
+						
+							<!-- //gradient instagram  -->
 
+							<svg class="icon github">
+								<a href="https://github.com/Denis-Kurilo" target="_blank"><use xlink:href="sprite.svg#github"></use></a>
+							</svg>
+							
+							<svg class="icon facebook">
+								<a href="https://www.facebook.com/profile.php?id=100024366126772" target="_blank"><use xlink:href="sprite.svg#facebook"></use></a>
+							</svg>
+						</div>
+					</div>	
+				</div>
+				
+			</div>
+			<div class="col-md-6">
+				<div class="formContacts__form">
+					<form class="form" action="">
+						<input class="fio" type="text" placeholder="Введите имя">
+						<input class="email" type="email" placeholder="Введите email" required="email адрес не правльно введен">
+						<select class="dropdown" name="" id="">
+							<option value="">Вопрос?</option>
+							<option value="">Жалоба</option>
+							<option value="">Прочее</option>
+						</select>
+						<textarea class="textarea" name="message" id="" placeholder="Введите сообщение"></textarea>
+						<input class="submit" type="submit" value="Отправить">		
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //CONTACTS -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
+<!-- FOOTER -->
+<footer class="footer">		
+	<div class="footer__text">
+		<div>Сайт портфолио </div>
+		<div>Курило Дениса </div>	
+	</div>
+	<div class="footer__link">
+		<a class="footer__link" href="#">dk-dew.ru</a>&copy; 2019
+	</div>
+</footer>
+<!-- //FOOTER -->
 
 
 
