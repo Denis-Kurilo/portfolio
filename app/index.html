@@ -32,7 +32,7 @@
 </head>
 <body>
 <!-- HEADER -->
-<header class="header" style="background-image: url(img/header/bg-header2.jpg)">
+<header id="header" class="header" style="background-image: url(img/header/bg-header2.jpg)">
 	<!-- <div class="discount">
 		<div class="discount__bLeft">
 			<div>При заказе </div>
@@ -52,7 +52,7 @@
 		<a class="button button--style" href="#">Заказать услугу</a>
 	</div>
 
-	<a href="#skils" class="mouse_scroll">
+	<a href="#top" class="mouse_scroll">
 		<div class="mouse">
 			<div class="wheel"></div>
 		</div>
@@ -66,10 +66,11 @@
 <!-- //HEADER -->
 
 <!-- NAV -->
-<div class="nav wrapper" id="navs">
+<div id="top"></div>
+<div id="nav" class="nav wrapper">
 	<!-- bg -->
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-		<polygon fill="#cdcdcd" points="0,100 100,0 100,100"/>
+	<svg class="bgNav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+		<polygon class="colorNavB" fill="#cdcdcd" points="0,100 100,0 100,100"/>
 	</svg>
 	<!-- //bg -->
 		<div class="logo">
@@ -107,10 +108,11 @@
 				</svg>
 			</div>
 			<div class="phone">
-				<svg class="mobile">
-					<a xlink:href="tel:89788059869"><use xlink:href="sprite.svg#mobile" width="30" height="30"></use>
+				<a href="tel:89788059869"><i class="fas fa-phone-volume"></i> 8(978)805-98-69</a>
+				<!-- <svg class="mobile">
+					<a xlink:href="tel:89788059869"><use xlink:href="sprite.svg#mobile" width="28" height="28"></use>
 						<text class="text"  x="40" y="23" >8(978)805-98-69</text></a>
-				</svg>
+				</svg> -->
 				
 			</div>
 		</div>
@@ -175,7 +177,7 @@
 <!-- SKILS -->
 <section id="skils" class="skils">
 	<div class="wrapTitleSection">
-		<h2 class="titleSection section">Умение и Навыки</h2>
+		<h2 class="titleSection section">Умение и навыки</h2>
 	</div>
 
 	<div class="card-3">
@@ -493,6 +495,7 @@
 <script src="libs/typed.js/typed.js-master/lib/typed.min.js"></script>
 <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 <script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="libs/headhesive.js-master/headhesive.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

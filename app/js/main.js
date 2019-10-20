@@ -1,5 +1,14 @@
 $(document).ready(function() {
+  //fixed header
+var options = {
+  offset: 1400
+}
+var header = new Headhesive('.nav', options); 
 
+//slide2id - плавная прокрутка по ссылкам внутри страницы
+  $("a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+      highlightSelector:"nav a"
+  });
 //typed 
   var typed = new Typed(".hero-typed-text", {
       strings: [
@@ -11,11 +20,6 @@ $(document).ready(function() {
       typeSpeed: 80,
       backSpeed: 40,
       loop: true
-  });
-
-//slide2id - плавная прокрутка по ссылкам внутри страницы
-  $("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
-      highlightSelector:"nav a"
   });
 
 //Owl carousel  slider
@@ -41,4 +45,15 @@ loop: true,
         },
     }
 });
+
+// $('.nav').removeClass("topMenuFixed");
+// $(window).scroll(function(){
+//   if($(this).scrollTop() > 50 ){
+//     $('.nav').addClass('topMenuFixed');
+//   }else{
+//     $('.nav').removeClass('topMenuFixed');
+//   };
+// });  
+
+
 });
