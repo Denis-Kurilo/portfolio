@@ -49,31 +49,38 @@
 		<p class="subtitle"> Что вы получите - <span class="hero-typed-text"></span></p>
 	</div>
 	<div class="wrap-btn">
-		<a class="button button--style" href="#">Заказать услугу</a>
+		<a class="button button--style popup-link" href="#order">Заказать услугу</a>
+		<div id="order" class="mfp-hide">
+			<h3 class="formTitle">Вы готовы сделать заказ?</h3>
+			<form class="orderForm" action="">
+				dsfsdf
+			</form>
+		</div>
 	</div>
 
-	<a href="#top" class="mouse_scroll">
-		<div class="mouse">
-			<div class="wheel"></div>
-		</div>
-		<div>
-			<span class="m_scroll_arrows unu"></span>
-			<span class="m_scroll_arrows doi"></span>
-			<span class="m_scroll_arrows trei"></span>
-		</div>
-	</a>
+	<div id="arrow-nav">
+		<a href="#nav" class="mouse_scroll">
+			<div class="mouse">
+				<div class="wheel"></div>
+			</div>
+			<div>
+				<span class="m_scroll_arrows unu"></span>
+				<span class="m_scroll_arrows doi"></span>
+				<span class="m_scroll_arrows trei"></span>
+			</div>
+		</a>
+	</div>
 </header>
 <!-- //HEADER -->
 
 <!-- NAV -->
-<div id="top"></div>
 <div id="nav" class="nav wrapper">
 	<!-- bg -->
 	<svg class="bgNav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 		<polygon class="colorNavB" fill="#cdcdcd" points="0,100 100,0 100,100"/>
 	</svg>
 	<!-- //bg -->
-		<div class="logo">
+		<div class="logo" id="top">
 			<a href="#header"><img src="img/logo/logo.png" alt="Логотип"></a>
 		</div>
 
@@ -179,7 +186,7 @@
 	<div class="wrapTitleSection">
 		<h2 class="titleSection section">Умение и навыки</h2>
 	</div>
-
+	
 	<div class="card-3">
 		<div class="container">
 			<div class="row">
@@ -296,12 +303,12 @@
 	<div class="sl">
 		<div class="sl__slider-img">
 			<div class="sl__slider-img__hover">
-				<div class="sl__title">Какой-то сайт</div>
+				<div class="sl__title">Сайт визитка мини гостиница</div>
 				<ul class="sl__slider-list">
-					<li>Текст</li>
-					<li>Текст</li>
-					<li>Текст</li>
-					<li>Текст</li>
+					<li>Тип сайта: Сайт визитка</li>
+					<li>Кол-во страниц: 7</li>
+					<li>Адаптивность: Да</li>
+					<li>Ошибка валидации: Нет</li>
 				</ul>	
 				<div class="sl__deskription">Сверстан сайт, мобильная </div>	
 				<div class="sl__slider-button"><a href="#">Перейти на сайт</a></div>
@@ -315,12 +322,12 @@
 	<div class="sl">
 		<div class="sl__slider-img">
 			<div class="sl__slider-img__hover">
-				<div class="sl__title">Какой-то сайт</div>
+				<div class="sl__title">Одностраничный сайт</div>
 				<ul class="sl__slider-list">
-					<li>Текст</li>
-					<li>Текст</li>
-					<li>Текст</li>
-					<li>Текст</li>
+					<li>Тип сайта: Landing page</li>
+					<li>Кол-во страниц: 1</li>
+					<li>Адаптивность: Да</li>
+					<li>Ошибка валидации: Нет</li>
 				</ul>	
 				<div class="sl__deskription">Сверстан сайт, мобильная </div>	
 				<div class="sl__slider-button"><a href="#">Перейти на сайт</a></div>
@@ -334,12 +341,12 @@
 	<div class="sl">
 		<div class="sl__slider-img">
 			<div class="sl__slider-img__hover">
-				<div class="sl__title">Какой-то сайт</div>
+				<div class="sl__title">Одностраничный сайт. Аполло</div>
 				<ul class="sl__slider-list">
-					<li>Текст</li>
-					<li>Текст</li>
-					<li>Текст</li>
-					<li>Текст</li>
+					<li>Тип сайта: Landing page</li>
+					<li>Кол-во страниц: 1</li>
+					<li>Адаптивность: Да</li>
+					<li>Ошибка валидации: Нет</li>
 				</ul>	
 				<div class="sl__deskription">Сверстан сайт, мобильная </div>	
 				<div class="sl__slider-button"><a href="#">Перейти на сайт</a></div>
@@ -353,12 +360,12 @@
 	<div class="sl">
 		<div class="sl__slider-img">
 			<div class="sl__slider-img__hover">
-				<div class="sl__title">Какой-то сайт</div>
+				<div class="sl__title">Сайт крипто валюты</div>
 				<ul class="sl__slider-list">
-					<li>Текст</li>
-					<li>Текст</li>
-					<li>Текст</li>
-					<li>Текст</li>
+					<li>Тип сайта: Landing page</li>
+					<li>Кол-во страниц: 1</li>
+					<li>Адаптивность: Да</li>
+					<li>Ошибка валидации: Нет</li>
 				</ul>	
 				<div class="sl__deskription">Сверстан сайт, мобильная </div>	
 				<div class="sl__slider-button"><a href="#">Перейти на сайт</a></div>
@@ -447,6 +454,13 @@
 	</div>
 </section>
 <!-- //CONTACTS -->
+<div id="arrowT">
+	<a href="#nav" id="arrow-top" class="arrowTop">
+		<!-- <div class="arrowTop"> -->
+			<i class="fas fa-chevron-up"></i>
+		<!-- </div> -->
+	</a>	
+</div>
 
 <!-- FOOTER -->
 <footer class="footer">		
@@ -495,7 +509,8 @@
 <script src="libs/typed.js/typed.js-master/lib/typed.min.js"></script>
 <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 <script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-<script src="libs/headhesive.js-master/headhesive.min.js"></script>
+<script src="libs/popup/jquery.magnific-popup.min.js"></script>
+<!-- <script src="libs/headhesive.js-master/headhesive.min.js"></script> -->
 <script src="js/main.js"></script>
 
 </body>
