@@ -2,9 +2,8 @@
    position: relative;
    height: 180px;
    background-color: @bgNavPanel;
-   h1 {
-      color: white;
-   }
+   
+   h1 {color: white;}
    svg {
      position: absolute;
      bottom: 0;
@@ -26,7 +25,6 @@
 .navigation{
   display: flex;
   margin-left: auto;
- 
 }
 .list{
   margin: 0;
@@ -56,9 +54,7 @@
   position: relative;
   text-decoration: none;
 }
-.list li a{
-  position: relative;
-}
+.list li a{position: relative;}
 
 //выподающий список
 .list ul{
@@ -83,17 +79,9 @@
   padding: 0;
 }
 
-.list li> ul li:hover{
- text-decoration: underline;
-}
-
-.list li:hover > ul, .list li:hover > ul{
-  transform: scaleY(1);
-}
-
-.fa-angle-down path{
-  fill: @colorNavigation;
-}
+.list li> ul li:hover{text-decoration: underline;}
+.list li:hover > ul, .list li:hover > ul{transform: scaleY(1);}
+.fa-angle-down path{fill: @colorNavigation;}
 
 .svg-inline--fa.fa-w-10 {
   width: 19px;
@@ -102,84 +90,3 @@
   top: 7px;
   left: 3px;
 }
-
-/* .headhesive{
-  width: 100%;
-  height: 75px;
-  background-color: rgba(35,35,35, 0.9);
-  position: fixed;
-  transform: translateY(-2000%);
-  z-index: 1000;
-  transition: (.3s);
-  
-  .colorNavB{
-    fill: rgba(35,35,35, 0);
-  }
-
-  .logo{
-    margin: 15px 0 0 50px; 
-    position: relative;
-    z-index: 1;
-    
-      img{
-        width: 150px;
-        height: 42px;
-      }
-  }
-
-  .list li a, .list li{
-    font-size: 18px;
-  }
-
-  .social .icon{
-    width: 25px;
-    height: 25px;
-  }
-
-  .icon, .icon a{
-    top: 10px;
-  }
-
-   .phone a{
-     top: 0;
-     font-size: 18px;
-     left: 24px;
-   }
-
-   .phone{
-     top: -30px;
-   }
-
-   .phone a .fa-phone-volume{
-     font-size: 20px;
-     left: -24px;
-   }
-
-   .list{
-     margin-top: -7px;
-   }
-
-   .svg-inline--fa.fa-w-10{
-    width: 17px;
-    height: 20px;
-   }
-
-   .list ul{
-     width: 225px;
-     top: 52px;
-     background-color: rgba(35,35,35, 0.9);
-   }
-
- .mobile{
-   top: -26px;
- }
- 
- .mobile text{
-   font-size: 18px;
- }
-}
-
-.headhesive--stick{
-  transform: translateY(-1%);
-} */
-

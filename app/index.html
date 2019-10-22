@@ -4,17 +4,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 	<!-- Titles -->
 	<title>Сайт Портфолио | Курило Дениса</title> 
 	<meta name="keywords" content="Ключевые слова...">
     <meta name="description" content="Описание страницы...">
-
 	<!-- Syles -->
 	<link rel="stylesheet" href="libs/bootstrap-4.0.0-dist/css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
 	<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-auto-replace-svg></script>
-
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- popup -->
@@ -51,32 +47,57 @@
 	<div class="wrap-btn">
 		<a class="button button--style popup-link" href="#order">Заказать услугу</a>
 		<div id="order" class="mfp-hide">
-			<h3 class="formTitle">Вы готовы сделать заказ?</h3>
+			<h3 class="formTitle">Заполните форму заказа</h3>
 			<form class="orderForm" action="">
-				<!-- <label class="labelFio" for="fio">Ваше имя</label> -->
-				<div class="row">
-					<div class="col-md-12">
-						<input class="inputFio" id="fio" type="text" placeholder="Введите имя">
-						<input class="inputEmail" id="email" type="email" placeholder="Введите email">
+				<div class="wrapInputFio">
+					<input class="inputFio"  type="text" placeholder="Имя*" required>	
+					<i class="fas fa-user" aria-hidden="true"></i>
+				</div>
+				<div class="wrapInputEmail">
+					<input class="inputEmail"  type="email" placeholder="Email*" required>
+					<i class="fas fa-at"></i>
+				</div>
+				<div class="wrapInputTel">
+					<input class="inputTel"  type="tel" placeholder="Телефон">
+					<i class="fas fa-phone-volume" aria-hidden="true"></i>
+				</div>
+				<select class="services" name="" id="">
+					<option >Выберите услугу</option>
+					<option >Landin Page</option>
+					<option >Сайт визитка</option>
+					<option >Промо сайт</option>
+					<option >Тематический сайт</option>
+					<option >Персональный сайт</option>
+				</select>
+				<div class="wrapRadio">
+					<div class="blockRadioL">
+					<div class="radioLTitle">Срок на разработку</div>
+					<label><input type="radio" name="term"> Нужно срочно </label>
+					<label><input class="termBtn" type="radio" name="term"> Я не спешу</label>
 					</div>
-
-					<div class="col-md-12">
-						<input class="inputTel"  type="text" placeholder="Введите телефон">
-						<select class="services" name="" id="">
-							<option value="">Выбирите услугу</option>
-							<option value="">Landin Page</option>
-							<option value="">Сайт визитка</option>
-							<option value="">Промо сайт</option>
-							<option value="">Тематический сайт</option>
-							<option value="">Персональный сайт</option>
-						</select>
+					
+					<div class="blockRadioR">
+					<div class="radioLTitle">Есть ли у вас ТЗ</div>
+					<label><input type="radio" name="tz">Да</label>
+					<label><input class="termBtn" type="radio" name="tz">Нет</label>	
 					</div>
 				</div>
-				<!-- <input class="inputFio" id="fio" type="text" placeholder="Введите имя">
+				<p class="radioDesk">Прежде чам отправить форму, скачайте и заполните техническое задание. После заполнение прикрепите ТЗ.</p>
+				<div class="wrapBtn">
+					<a href="download/Бриф на разработку сайта.docx" class="btnL btnL--style" download>Скачать ТЗ</a>
+					<input type="file" id="upload" class="hide btnR">
+					<label for="upload" class="btnR">Прикрепить ТЗ</label>
+				</div>	
+				<div class="wrapOrderFormTextarea">
+					<i class="fas fa-envelope" aria-hidden="true"></i>
+					<textarea class="orderFormTextarea orderFormTextarea--height" name="message" id="message" placeholder="Введите сообщение"></textarea>	
+				</div>
 				
-				<label class="labelEmail" for="email">Ваше email</label>
-				<input class="inputEmail" id="email" type="email" placeholder="Введите email">
-				<input class="inputTel"  type="text" placeholder="Введите телефон"> -->
+				<div class="wrapSubmit wrapSubmit--position">
+					<input class="submit submit--margin" type="submit" value="Отправить">
+					<i class="far fa-paper-plane"></i>
+				</div>
+						
 			</form>
 		</div>
 	</div>
@@ -139,11 +160,6 @@
 			</div>
 			<div class="phone">
 				<a href="tel:89788059869"><i class="fas fa-phone-volume"></i> 8(978)805-98-69</a>
-				<!-- <svg class="mobile">
-					<a xlink:href="tel:89788059869"><use xlink:href="sprite.svg#mobile" width="28" height="28"></use>
-						<text class="text"  x="40" y="23" >8(978)805-98-69</text></a>
-				</svg> -->
-				
 			</div>
 		</div>
 
@@ -399,7 +415,7 @@
 	<!-- //card -->
 	</div>
 	<div class="wrap-btn">
-		<a class="button button--styleP mb-40" href="#">Заказать</a>
+		<a class="button button--styleP mb-40 popup-link" href="#order">Заказать</a>
 	</div>
 </section>
 <!-- //PORTFOLIO -->
@@ -443,9 +459,7 @@
 							<svg class="icon instagram">
 								<a href="https://www.instagram.com/kurilo__denis/" target="_blank"><use xlink:href="sprite.svg#instagram"></use></a>
 							</svg>
-						
 							<!-- //gradient instagram  -->
-
 							<svg class="icon github">
 								<a href="https://github.com/Denis-Kurilo" target="_blank"><use xlink:href="sprite.svg#github"></use></a>
 							</svg>
@@ -456,7 +470,6 @@
 						</div>
 					</div>	
 				</div>
-				
 			</div>
 			<div class="col-md-6">
 				<div class="formContacts__form">
@@ -492,41 +505,10 @@
 		<div>Курило Дениса </div>	
 	</div>
 	<div class="footer__link">
-		<a class="footer__link" href="#">dk-dew.ru</a>&copy; 2019
+		<a class="footer__link" href="#">dk-dev.ru</a>&copy; 2019
 	</div>
 </footer>
 <!-- //FOOTER -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="libs/jquery/jquery-3.2.1.min.js"></script>
 <script src="libs/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 <script src="libs/typed.js/typed.js-master/lib/typed.min.js"></script>
@@ -535,6 +517,5 @@
 <script src="libs/popup/jquery.magnific-popup.min.js"></script>
 <!-- <script src="libs/headhesive.js-master/headhesive.min.js"></script> -->
 <script src="js/main.js"></script>
-
 </body>
 </html>
