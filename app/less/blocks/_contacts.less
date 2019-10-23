@@ -1,15 +1,17 @@
 .contacts{
-	width: 300px;
-	height: 150px;
+	border: 1px solid green;
+	 //width: 215px;
+	//height: 150px;
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	left: 50px;
+	display: flex;
+    align-items: center;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 
 .social{
-	width: 300px;
-	height: 70px;
+	/* width: 300px;
+	height: 70px; */
 }
 
 .icon, .icon a{
@@ -49,8 +51,13 @@
 .facebook a:hover{fill: @colorSocialHoverFacebook;}
 
 .social .icon{
-	width: 35px;
-	height: 35px;
+	width: 30px;
+	height: 30px;
+	
+	@media only screen and (min-width : 1200px) {
+		width: 35px;
+		height: 35px;
+    }
 }
 
 .social .vk{left: 0px;}
@@ -60,26 +67,38 @@
 
 //mobile
 .phone{
-	width: 100%;
+	width: 215px;
 	height: auto;
 	position: relative;
-	top: 10px;
+	top: 0px;
+	
+	@media only screen and (min-width : 1200px) {
+    	top: 10px;
+  }
 }
  .phone a {
 	position: relative;
 	left: 28px;
 	color: #FFF;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 18px;
+	
+	@media only screen and (min-width : 1200px) {
+      font-size: 20px;
+    }
 }
 
 .phone a .fa-phone-volume{
 	position: absolute;
 	left: -28px;
 	top: -3px;
-	font-size: 25px;
+	font-size: 22px;
 	color: #FFF;
 	height: 30px;
+	
+	@media only screen and (min-width : 1200px) {
+    	font-size: 25px;
+  }
 }
 
 .svg-inline--fa .fa-phone-volume .fa-w-12{
