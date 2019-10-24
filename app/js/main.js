@@ -63,67 +63,61 @@ loop: true,
 
 
 // Мобильная навигация
-/*var navToggleButton = $('.navigation__toggle');
+var navToggleButton = $('.navigation__toggle');
 var navToggleIcon = $('.navigation__toggle .fas');
-var navBlock = $('.nav__list');
-var navBlockLogo = $('.logo');
-var navLink = $('.nav__list a');
-var navBlockOpen = 'navigation__list--open';
-var navBlockOpenLogo = 'logo--mobile-open';
+var navBlock = $('.navigation');
+var navLink = $('.navigation .list a');
+var navBlockOpen = 'list--close';
 var iconNavOpen = 'fa-bars';
-var iconNavClose = 'fa-times';
+var iconNavClose = 'fa-times'; 
 var blockHidden = $('.overflow-hidden');
+
+
 
 navToggleButton.on('click', function(e){
   e.preventDefault();
   navBlock.toggleClass(navBlockOpen);
-  navBlockLogo.toggleClass(navBlockOpenLogo);
-
+ 
 
 //replacing-icon
  if(navToggleIcon.hasClass(iconNavOpen) ){
     navToggleIcon.removeClass(iconNavOpen);
-    navToggleIcon.addClass(iconNavClose);
-    navBlockLogo.addClass(navBlockOpenLogo);
-    //blockHidden.css('overflow','hidden');
+    navToggleIcon.addClass(iconNavClose).fadeIn(1000);
+
+    if ( $(window).width() < 768 ) {
+      blockHidden.css('overflow','hidden');
+    }
 
   }else{
     navToggleIcon.addClass(iconNavOpen);
     navToggleIcon.removeClass(iconNavClose);
-    navBlockLogo.removeClass(navBlockOpenLogo);
-    //blockHidden.css('overflow','visible');
+    if ( $(window).width() < 768 ) {
+      blockHidden.css('overflow','visible');
+    }
   }
 })
+
  navLink.on('click', function(){
   navBlock.removeClass(navBlockOpen);
-  navBlockLogo.removeClass(navBlockOpenLogo);
 
 //replacing-icon
   if(navToggleIcon.hasClass(iconNavOpen) ){
     navToggleIcon.removeClass(iconNavOpen);
     navToggleIcon.addClass(iconNavClose);
-    //blockHidden.css('overflow','hidden');
+    if ( $(window).width() < 768 ) {
+       blockHidden.css('overflow','hidden');
+    }
+ 
   }else{
     navToggleIcon.addClass(iconNavOpen);
     navToggleIcon.removeClass(iconNavClose);
-    //blockHidden.css('overflow','visible');
+    if ( $(window).width() < 768 ) {
+      blockHidden.css('overflow','visible');
+    }
   }
-})
+}); 
 
-navBlockLogo.on('click', function(){
-  navBlock.removeClass(navBlockOpen);
-  navBlockLogo.toggleClass(navBlockOpenLogo);
-
-  if(navToggleIcon.hasClass(iconNavOpen) ){
-    navToggleIcon.removeClass(iconNavOpen);
-    navToggleIcon.addClass(iconNavClose);
-    //blockHidden.css('overflow','hidden');
-  }else{
-    navToggleIcon.addClass(iconNavOpen);
-    navToggleIcon.removeClass(iconNavClose);
-    //blockHidden.css('overflow','visible');
-  }
-})*/
+});
 
 //Animate arrow-top
 $(function (){

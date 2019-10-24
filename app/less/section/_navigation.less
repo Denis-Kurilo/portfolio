@@ -1,7 +1,11 @@
 .nav {
    position: relative;
-   height: 180px;
+   height: 130px;
    background-color: @bgNavPanel;
+   
+   @media only screen and (min-width : 768px) {
+     height: 180px;
+  }
    
    h1 {color: white;}
    svg {
@@ -73,8 +77,13 @@ nav[role="navigation"]{
   position: relative;
   text-decoration: none;
   
+  
   @media only screen and (min-width : 1200px) {
-    font-size: 20px;
+    font-size: 17px;
+  }
+
+  @media only screen and (min-width : 1270px) {
+     font-size: 20px;
   }
 }
 .list li a{position: relative;}
